@@ -24,7 +24,7 @@
   },
   "scripts": {
     "build": "babel ./src --out-dir ./lib",
-    "test":  "test": "mocha -R nyan test/**/*test.js --compilers js:babel-core/register --recursive",
+    "test":"mocha -R nyan test/**/*test.js --compilers js:babel-core/register --recursive",
     "start": "nodemon server.js"
   },
   "repository": {
