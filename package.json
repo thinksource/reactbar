@@ -1,6 +1,6 @@
 {
   "name": "reactbar",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": true,
   "license": "see LICENSE file",
   "description": "Code for test",
@@ -8,23 +8,22 @@
   "dependencies": {
     "body-parser": "^1.4.3",
     "express": "^4.4.5",
-    "react":"^15.1.0",
-    "react-dom":"^15.1.0",
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0",
     "babel-cli": "^6.2.0",
     "babel-core": "^6.2.1",
     "babel-preset-react": "^6.1.18",
     "babel-preset-es2015": "^6.1.18"
   },
   "devDependencies": {
-    "nodemon":"^1.9.2",
-    "babel-jest":"^12.1.0",
+    "nodemon": "^1.9.2",
+    "babel-jest": "^12.1.0",
     "testdom": "^2.0.0",
-    "react-addons-test-utils": "~0.15.1",
-     "mocha": "^2.4.5"
+    "mocha": "^2.4.5"
   },
   "scripts": {
     "build": "babel ./src --out-dir ./lib",
-    "test":"mocha -R nyan test/**/*test.js --compilers js:babel-core/register --recursive",
+    "test": "mocha -R nyan test/**/*test.js --compilers js:babel-core/register --recursive",
     "start": "nodemon server.js"
   },
   "repository": {
@@ -32,12 +31,14 @@
     "url": ""
   },
   "babel": {
- "presets": ["es2015", "react"]
- },
+    "presets": [
+      "es2015",
+      "react"
+    ]
+  },
   "author": "Sheng",
   "bugs": {
     "url": ""
   },
   "homepage": ""
-
 }
